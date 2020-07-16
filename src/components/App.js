@@ -1,12 +1,13 @@
 import React from 'react';
+import { Container, Header, Button, Icon, Dimmer, Loader, Divider } from 'semantic-ui-react';
 
-import '../styles/main.scss';
+
 
 const App = () => {
   return (
-    <div>
+    <Container>
       App
-    </div>
+    </Container>
   );
 }
 
