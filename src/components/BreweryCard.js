@@ -1,4 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
+import { fetchBreweries } from '../actions';
 
 class BreweryCard extends React.Component {
   render() {
@@ -8,4 +11,6 @@ class BreweryCard extends React.Component {
   }
 }
 
-export default BreweryCard;
+export default connect(
+  null, {fetchBreweries}
+)(BreweryCard);
