@@ -5,6 +5,6 @@ export const fetchBreweries = () => async (dispatch) => {
 
     dispatch({
       type: 'FETCH_BREWERIES',
-      payload: response
+      payload: response.data
     });
   }

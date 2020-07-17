@@ -9,6 +9,8 @@ class BreweryCard extends React.Component {
   }
 
   render() {
+    console.log(this.props.breweries);
+
     return (
       <div>BreweryCard</div>
     )
@@ -20,6 +22,6 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(
-  mapStateToProps, 
+  mapStateToProps,
   {fetchBreweries}
 )(BreweryCard);
