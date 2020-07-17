@@ -6,6 +6,7 @@ import BreweryCard from './BreweryCard';
 const App = () => {
   return (
     <Container>
+      <Header>&#127866;Brewtiful</Header>
       <BreweryCard />
     </Container>
   );
