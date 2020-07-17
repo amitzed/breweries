@@ -1,7 +1,6 @@
 import openbrewery from '../apis/openbrewery';
 
-export const fetchBreweries = () => {
-  return async (dispatch) => {
+export const fetchBreweries = () => async (dispatch) => {
     const response = await openbrewery.get('/');
 
     dispatch({
@@ -9,4 +8,3 @@ export const fetchBreweries = () => {
       payload: response
     });
   }
-};
