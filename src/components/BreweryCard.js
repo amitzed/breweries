@@ -15,6 +15,11 @@ class BreweryCard extends React.Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  return { breweries: state.breweries}
+}
+
 export default connect(
-  null, {fetchBreweries}
+  mapStateToProps, 
+  {fetchBreweries}
 )(BreweryCard);
