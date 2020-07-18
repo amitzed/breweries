@@ -26,7 +26,7 @@ class BreweryCard extends React.Component {
   }
 
   render() {
-    // console.log(this.props.breweries);
+    console.log(this.props.breweries);
 
     return (
       <div>
