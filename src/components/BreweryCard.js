@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Header, Button, Icon, Dimmer, Loader, Divider } from 'semantic-ui-react';
 
 import { fetchBreweries } from '../actions';
 
@@ -12,12 +11,17 @@ class BreweryCard extends React.Component {
   renderCard() {
     return this.props.breweries.map(brewery => {
       return (
-        <div key={brewery.id}>
-          <i />
-          <div>
-            <div>
-              <h2>{brewery.name}</h2>
-              <p>{brewery.state}</p>
+        <div className="ui items brewery-card-wrapper" key={brewery.id}>
+          <div className="item">
+            <a href={brewery.website_url} target="_blank"><i className="huge middle aligned icon beer" /></a>
+            <div className="content">
+              <a className="header" href={brewery.website_url} target="_blank"><h2>{brewery.name}</h2></a>
+              <div className="meta brewery-type">
+                Type: {brewery.brewery_type}
+              </div>
+              <div className="description">
+                <a className="header" href={brewery.website_url} target="_blank">{brewery.website_url}</a>
+              </div>
             </div>
           </div>
         </div>
@@ -26,10 +30,10 @@ class BreweryCard extends React.Component {
   }
 
   render() {
-    console.log(this.props.breweries);
+    // console.log(this.props.breweries);
 
     return (
-      <div>
+      <div className="ui relaxed divided list">
         <div>
           {this.renderCard()}
         </div>
