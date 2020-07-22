@@ -5,7 +5,7 @@ import BreweryCard from './BreweryCard';
 const App = () => {
   return (
     <div>
-      <div>&#127866;Brewtiful Los Angeles</div>
+      <div>Brewtiful Los Angeles</div>
       <BreweryCard />
     </div>
   );
