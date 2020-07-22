@@ -8,3 +8,7 @@ export const fetchBreweries = () => async (dispatch) => {
       payload: response.data
     });
   }
+
+export const fetchInfo = () => async (dispatch) => {
+  const response = await openbrewery.get('&by_city=los_angeles')
+}

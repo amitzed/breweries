@@ -1,11 +1,12 @@
 import React from 'react';
 
 import BreweryCard from './BreweryCard';
+import Header from './Header';
 
 const App = () => {
   return (
     <div>
-      <div>Brewtiful Los Angeles</div>
+      <Header />
       <BreweryCard />
     </div>
   );
