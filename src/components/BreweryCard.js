@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import { fetchBreweries } from '../actions';
-import FooterCard from './FooterCard';
 
 class BreweryCard extends React.Component {
   componentDidMount() {
@@ -12,20 +11,30 @@ class BreweryCard extends React.Component {
   renderCard() {
     return this.props.breweries.map(brewery => {
       return (
-        <div className="eight wide column">
-          <div className="ui items brewery-card-wrapper" key={brewery.id}>
+        <div className="eight wide column" key={brewery.id}>
+          <div className="ui items brewery-card-wrapper">
             <div className="item">
               <a href={brewery.website_url} target="_blank" rel="noopener noreferrer"><i className="large middle aligned circular icon beer" /></a>
               <div className="content">
                 <a className="header" href={brewery.website_url} target="_blank" rel="noopener noreferrer"><h2>{brewery.name}</h2></a>
-                <div className="meta brewery-type">
+                <div className="meta brewery-street">
                   {brewery.street}
                 </div>
-                <div className="description">
-                  <a className="header" href={brewery.website_url} target="_blank" rel="noopener noreferrer">{brewery.website_url}</a>
+                <div className="description brewery-type">
+                  <h5 className="header">Type: {brewery.brewery_type}</h5>
                 </div>
               </div>
-              <FooterCard type={brewery.brewery_type} />
+
+              <div className="ui cards">
+                <div className="extra content footer-card">
+                  <div className="ui one button">
+                    <div className="ui basic green button">
+                      <a href={brewery.website_url} target="_blank" rel="noopener noreferrer">Website</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
