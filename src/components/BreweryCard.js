@@ -27,7 +27,7 @@ class BreweryCard extends React.Component {
               <div className="ui cards" data-aos="flip-left">
                 <div className="extra content footer-card">
                   <div className="ui one button">
-                    <div className="ui basic green button">
+                    <div className="ui inverted olive icon button">
                       <a href={brewery.website_url} target="_blank" rel="noopener noreferrer"><i className="large middle aligned circular icon beer" /></a>
                     </div>
                   </div>

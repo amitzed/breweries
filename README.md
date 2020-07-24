@@ -1,5 +1,7 @@
 # Brewtiful Los Angeles
 
+## React / Redux app that pulls data from the OpenBreweryDB API.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+  .ui.grid>[class*="eight wide"].column {
+    width: 100%!important;
+  }
+}
+
+@media (max-width: 450px) {
+  .ui.items:not(.unstackable)>.item {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 414px) {
+  h1.ui.header {
+    font-size: 1.5rem;
+  }
+}

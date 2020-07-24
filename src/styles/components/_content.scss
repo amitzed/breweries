@@ -1,0 +1,23 @@
+.content-wrapper {
+  .ui.grid {
+    margin-left: 0;
+    margin-right: 0;
+
+    &>.column:not(.row) {
+      border: 1px solid $red;
+      margin-bottom: 1em;
+
+      &:nth-child(3n+0) {
+        background: $grey;
+      }
+
+      &:nth-child(3n+1) {
+        background: $green;
+      }
+
+      &:nth-child(3n+2) {
+        background: $orange;
+      }
+    }
+  }
+}
