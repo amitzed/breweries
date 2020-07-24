@@ -1,0 +1,32 @@
+.image-wrapper {
+  margin: 1.25rem 0 3rem 0;
+
+  .ui.segment {
+    background-image: url('../../assets/images/pattern1.jpg');
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    -ms-animation: animatedBackground 40s linear infinite;
+    -o-animation: animatedBackground 40s linear infinite;
+    -moz-animation: animatedBackground 40s linear infinite;
+    -webkit-animation: animatedBackground 40s linear infinite;
+    animation: animatedBackground 40s linear infinite;
+  }
+
+  @-webkit-keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+
+  @keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+}

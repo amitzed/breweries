@@ -1,0 +1,17 @@
+.footer {
+  margin: 3em 0;
+
+  .ui.block.header {
+    background: $red;
+    cursor: pointer;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      background: $orange;
+    }
+  }
+}

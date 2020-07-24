@@ -1,8 +1,8 @@
-import React from 'react';;
+import React from 'react';
 
 const Header = () => {
   return (
-    <div>
+    <div className="header">
       <h1 className="ui center aligned block header">
         <i className="beer icon" />
         Brewtiful Los Angeles
