@@ -4,7 +4,6 @@
     margin-right: 0;
 
     &>.column:not(.row) {
-      border: 1px solid $red;
       margin-bottom: 1em;
 
       &:nth-child(3n+0) {
