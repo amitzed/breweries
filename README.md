@@ -1,8 +1,8 @@
-# [Brewtiful Los Angeles](https://modernwolf.com/)
+# [Brewtiful Los Angeles](https://brewtiful-losangeles.herokuapp.com/)
 
 ## React / Redux app that pulls data from the OpenBreweryDB API. Click beer icons to link to companies that have available business websites.
 
-## Heroku deployment coming soon
+## Heroku live deployment - click title link above or click [here](https://brewtiful-losangeles.herokuapp.com/)
 
 <h4 align="center">Desktop View Top</h4>
 <p align="center">

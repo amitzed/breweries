@@ -8,7 +8,7 @@ const Header = () => {
         Brewtiful Los Angeles
       </h1>
       <h2 className="ui sub header" data-aos="zoom-in">
-        Visit Some of the Best Brewerier in LA
+        Visit Some of the Best Breweries in LA
       </h2>
     </div>
   )
